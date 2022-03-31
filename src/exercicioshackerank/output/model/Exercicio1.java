@@ -1,4 +1,4 @@
-package exercicioshackerank.elseif.model;
+package exercicioshackerank.output.model;
 /*Input Format
 
 There are three lines of input:
@@ -21,7 +21,7 @@ for that line of integer input is still queued in the input buffer and the next 
 Will be reading the remainder of the integer line (which is empty).*/
 import java.util.Scanner;
 
-public class Exercicio2 {
+public class Exercicio1 {
     public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     int i = scanner.nextInt();
