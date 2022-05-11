@@ -8,21 +8,23 @@ public class JavaList {
         System.out.println("Digite a Quantidade de elementos: ");
         int n = scanner.nextInt();
         System.out.println("Digite os elementos: ");
+
          List<Integer> numeros = new ArrayList<>(Arrays.asList());
+
         while (numeros.size() < n) {
             int l = scanner.nextInt();
             numeros.add(l);
         }
-        System.out.println("Digite o elemento e a posiçao a ser adicionado: ");
-        int numeroAdicionado = scanner.nextInt();
-        int index = scanner.nextInt();
-        if (numeros.size() > n)
-        numeros.add(numeroAdicionado,index);
+        List <Integer> listaB= new ArrayList<>(numeros);
+            System.out.println("Digite a posição e o elemento: ");
+            int index = scanner.nextInt();
+            int numero = scanner.nextInt();
+            listaB.add(index,numero);
 
-        System.out.println("Digite o elemento a ser deletado: ");
+        System.out.println("Digite a posição que deseja deletar: ");
         int delete = scanner.nextInt();
-        numeros.remove(delete);
-        for (Integer percorrer : numeros) {
+        listaB.remove(delete);
+        for (Integer percorrer : listaB) {
             System.out.print(percorrer + " ");
         }
     }
